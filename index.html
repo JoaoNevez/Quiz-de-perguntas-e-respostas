@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>❓ Quiz de Perguntas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>❓ Quiz de Perguntas</h1>
+    <p id="progresso" class="muted"></p>
+
+    <div id="quiz">
+      <h2 id="pergunta"></h2>
+      <div id="opcoes" class="opcoes" role="listbox" aria-label="Opções de resposta"></div>
+      <button id="proxima" disabled>Próxima</button>
+    </div>
+
+    <div id="resultado" class="hidden" aria-live="polite">
+      <h2>Resultado</h2>
+      <p id="placar"></p>
+      <button id="reiniciar">Jogar novamente</button>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
